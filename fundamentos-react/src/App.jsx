@@ -1,38 +1,42 @@
 import React from 'react'
 
+import './App.css'
+
 import Card from './components/layout/Card'
-import Aleatorio from './components/basicos/Aleatorio'
-import Fragmento from './components/basicos/Fragmento'
-import ComParametro from './components/basicos/ComParametro'
-import Primeiro from './components/basicos/Primeiro'
+import Aleatorio from './components/basics/Aleatorio'
+import Fragmento from './components/basics/Fragmento'
+import ComParametro from './components/basics/ComParametro'
+import Primeiro from './components/basics/Primeiro'
 
 
 
 export default (props) => {
     return (
-        <div id='app'>
+        <div className='app'>
             <h1>Fundamentos React</h1>
 
-            <Card titulo='#04 - DesafioAleatório'>
-                <Aleatorio min={10} max={50} />
-            </Card>
+            <div className='cards'>
+                <Card titulo='#04 - DesafioAleatório' color='#000080'>
+                    <Aleatorio min={10} max={50} />
+                </Card>
 
-            <Card titulo='#03 - Fragmento'>
-                <Fragmento />
-            </Card>
+                <Card titulo='#03 - Fragmento' color='#00FFFF'>
+                    <Fragmento />
+                </Card>
 
-            <Card titulo='#02 - Com Parametro'>
-                <ComParametro
-                    titulo="Situação do aluno"
-                    aluno="Evenilsond Liandro"
-                    nota={8.1}
-                />
+                <Card titulo='#02 - Com Parametro' color='#00FF00'>
+                    <ComParametro
+                        titulo="Situação do aluno"
+                        aluno="Evenilson Liandro"
+                        nota={8.1}
+                    />
 
-            </Card>
+                </Card>
 
-            <Card titulo='#01 - Primeiro componente'>
-                <Primeiro></Primeiro>
-            </Card>
+                <Card titulo='#01 - Primeiro componente' color='#FF0000'>
+                    <Primeiro></Primeiro>
+                </Card>
+            </div>
         </div>
     )
 }
