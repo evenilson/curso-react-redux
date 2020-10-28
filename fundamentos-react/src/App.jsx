@@ -2,6 +2,8 @@ import React from 'react'
 
 import './App.css'
 
+import Familia from './components/basics/Familia'
+import FamiliaMembro from './components/basics/FamiliaMembro'
 import Card from './components/layout/Card'
 import Aleatorio from './components/basics/Aleatorio'
 import Fragmento from './components/basics/Fragmento'
@@ -10,12 +12,21 @@ import Primeiro from './components/basics/Primeiro'
 
 
 
-export default (props) => {
+export default () => {
     return (
         <div className='app'>
             <h1>Fundamentos React</h1>
 
             <div className='cards'>
+
+                <Card titulo='#05 - Componente com Filhos' color='#ff69b4'>
+                    <Familia sobrenome='Silvaa'>
+                        <FamiliaMembro nome='Pedro'  />
+                        <FamiliaMembro nome='Evenilson'  />
+                        <FamiliaMembro nome='Jose' />
+                    </Familia>
+                </Card>
+
                 <Card titulo='#04 - DesafioAleatório' color='#000080'>
                     <Aleatorio min={10} max={50} />
                 </Card>
@@ -37,7 +48,7 @@ export default (props) => {
                     <Primeiro></Primeiro>
                 </Card>
             </div>
-        </div>
+        </div >
     )
 }
 
