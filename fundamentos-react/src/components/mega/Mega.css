@@ -5,3 +5,8 @@
     margin: 2px;
     border-radius: 100%;
 }
+
+.mega input {
+    font-size: 1.4rem;
+    width: 50px;
+}
