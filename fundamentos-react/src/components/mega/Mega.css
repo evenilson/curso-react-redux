@@ -1,0 +1,7 @@
+.mega ul li{
+    display: inline-block;
+    padding: 4px; 
+    background-color: springgreen;
+    margin: 2px;
+    border-radius: 100%;
+}
