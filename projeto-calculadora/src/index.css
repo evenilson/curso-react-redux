@@ -1,17 +1,19 @@
+@font-face{
+    font-family:'RobotoMono';
+    src: url('./fonts/RobotoMono-Thin.ttf');
+}
+
+*{
+    font-family: 'RobotoMono', monospace;
+}
+
 body{
-    font-family: Oswald;
-    background-color: #222;
-    color: #fff;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-size: 1.4rem;
-}
 
-
-h1, h2, h3{
-    font-weight: 200;
-    
-}
-h2, h3{
-    font-weight: 200;
-    margin: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(21, 153, 87), rgb(21, 87, 153)) repeat scroll 0% 0%;
 }
